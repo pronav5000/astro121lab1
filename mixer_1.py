@@ -9,4 +9,4 @@ for SAMPLE_RATE in SAMPLE_RATES:
     _ = sdr.capture_data(nblocks=1)
     data = sdr.capture_data(nblocks=100)
     sdr.close()
-    np.savez(f"mixer_data/{SAMPLE_RATE}_7.3.1_real_sum_freq_data.npz", data)
+    np.savez(f"mixer_data/{SAMPLE_RATE}_diff_freq_data.npz", data)
