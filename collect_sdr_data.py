@@ -7,4 +7,4 @@ for SAMPLE_RATE in SAMPLE_RATES:
     _ = sdr.capture_data(nblocks = 1)
     data = sdr.capture_data(nblocks = 10)
     sdr.close()
-    np.savez(f"sdr_data/{SAMPLE_RATE}_sdr_nw_data.npz", data)
+    np.savez(f"sdr_data/{SAMPLE_RATE}_sdr_nw2_data.npz", data)
